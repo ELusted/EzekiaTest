@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9380daa0-6304-452e-8072-8d74cfa13fc9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" afterDir="false" />
     </list>
@@ -63,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657527028231</updated>
-      <workItem from="1657527030827" duration="8226000" />
+      <workItem from="1657527030827" duration="10844000" />
     </task>
     <servers />
   </component>

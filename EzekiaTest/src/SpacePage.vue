@@ -57,7 +57,7 @@ Follow the requirements and also complete any prompts in the two component files
             Space
         </h1>
 
-      <div classspace-page__body>
+      <div class="space-page__body">
 
         <museum-highlight v-for="item in spaceHighlights"
         :data="item">
@@ -152,6 +152,7 @@ export default {
     methods: {
 
       // I need to pull out the spacePartners data to be able to use it with the spaceHighlights data
+      // I'm assuming that each spacePartners will have a createdAt, info, image and a name
 
     },
     created() {
