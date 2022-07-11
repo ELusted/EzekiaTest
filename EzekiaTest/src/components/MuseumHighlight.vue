@@ -55,7 +55,7 @@ export default {
     },
     methods: {
       getHumanDate(dateValue) {
-        return moment(String(dateValue)).format('MM/DD/YYYY hh:mm')
+        return moment(String(dateValue)).format('DD/MMMM/YYYY hh:mm')
 
       }
 

@@ -74,7 +74,7 @@ Follow the requirements and also complete any prompts in the two component files
 <script>
 
 import MuseumHighlight from '././components/MuseumHighlight.vue';
-import {forEach} from 'lodash';
+import {forEach, orderBy} from 'lodash';
 import {toRaw} from 'vue';
 
 export default {
@@ -142,7 +142,7 @@ export default {
       // I'm assuming that data is the date created for spaceHighlights
       orderedSpaceData () {
 
-        return [ ...this.spacePartnersNewArray(), ...toRaw(this.spaceHighlights) ];
+        return orderBy([ ...this.spacePartnersNewArray(), ...toRaw(this.spaceHighlights) ], ['date'], ['desc']);
       },
 
 
@@ -166,7 +166,7 @@ export default {
           }];
 
         });
-console.log(tempPartnerArray, 'ssss');
+
         return tempPartnerArray;
       }
     },
