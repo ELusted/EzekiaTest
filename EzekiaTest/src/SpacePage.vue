@@ -64,7 +64,7 @@ Follow the requirements and also complete any prompts in the two component files
 
 <script>
 
-import MuseumHighlight from './components/MuseumHighlight';
+// import MuseumHighlight from './components/MuseumHighlight';
 
 export default {
     name: 'SpacePage',
