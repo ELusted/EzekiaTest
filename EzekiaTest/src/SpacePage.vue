@@ -64,6 +64,12 @@ Follow the requirements and also complete any prompts in the two component files
 
 
         </museum-highlight>
+
+        <museum-highlight v-for="item in spacePartners"
+                          :data="item">
+
+
+        </museum-highlight>
       </div>
         <!-- Add the museum highlight cards based on the data provided below -->
 
@@ -136,8 +142,16 @@ export default {
     },
     computed: {
 
+      // I need to order the data by date of date created, with the most recent first
+      // I'm assuming that data is the date created for spaceHighlights
+      orderedSpaceData () {
+        return;
+      }
+
     },
     methods: {
+
+      // I need to pull out the spacePartners data to be able to use it with the spaceHighlights data
 
     },
     created() {

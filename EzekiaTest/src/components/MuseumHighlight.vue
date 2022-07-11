@@ -1,5 +1,10 @@
 <template>
-    <div class="museum-highlight">{{data.name}}
+<!--  TODO this would be split out so the generic data would be in its own area and then specific data would be added into the different area (ie Space, Dinosaur, Wildlife) -->
+    <div class="museum-highlight">
+      {{data.name}} - {{data.id}}
+      {{data.date}}
+      {{data.description}}
+      {{data.news}}
         <!-- Display the available information for the highlight -->
     </div>
 </template>
