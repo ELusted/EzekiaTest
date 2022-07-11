@@ -59,17 +59,12 @@ Follow the requirements and also complete any prompts in the two component files
 
       <div class="space-page__body">
 
-        <museum-highlight v-for="item in spaceHighlights"
+        <museum-highlight v-for="item in orderedSpaceData"
         :data="item">
 
 
         </museum-highlight>
 
-        <museum-highlight v-for="item in spacePartners"
-                          :data="item">
-
-
-        </museum-highlight>
       </div>
         <!-- Add the museum highlight cards based on the data provided below -->
 
@@ -79,6 +74,8 @@ Follow the requirements and also complete any prompts in the two component files
 <script>
 
 import MuseumHighlight from '././components/MuseumHighlight.vue';
+import {forEach} from 'lodash';
+import {toRaw} from 'vue';
 
 export default {
     name: 'SpacePage',
@@ -141,19 +138,37 @@ export default {
         };
     },
     computed: {
-
       // I need to order the data by date of date created, with the most recent first
       // I'm assuming that data is the date created for spaceHighlights
       orderedSpaceData () {
-        return;
-      }
+
+        return [ ...this.spacePartnersNewArray(), ...toRaw(this.spaceHighlights) ];
+      },
+
 
     },
     methods: {
 
+
+
       // I need to pull out the spacePartners data to be able to use it with the spaceHighlights data
       // I'm assuming that each spacePartners will have a createdAt, info, image and a name
 
+      spacePartnersNewArray () {
+        let tempPartnerArray = [];
+        forEach(this.spacePartners, function(value, key) {
+          tempPartnerArray = [...tempPartnerArray, {
+            date: value.createdAt,
+            description: value.info,
+            image: value.image,
+            name: value.name,
+            partner: true
+          }];
+
+        });
+console.log(tempPartnerArray, 'ssss');
+        return tempPartnerArray;
+      }
     },
     created() {
 

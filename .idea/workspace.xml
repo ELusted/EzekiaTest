@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" afterDir="false" />
     </list>
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657527028231</updated>
-      <workItem from="1657527030827" duration="10844000" />
+      <workItem from="1657527030827" duration="15468000" />
     </task>
     <servers />
   </component>

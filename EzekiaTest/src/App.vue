@@ -4,8 +4,9 @@
 
 
     <div id="app">
-     I'm here
-
+      <div class="app__header">
+        natural history museum
+      </div>
       <space-page></space-page>
     </div>
 

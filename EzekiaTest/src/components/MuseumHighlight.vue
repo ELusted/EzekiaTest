@@ -1,10 +1,10 @@
 <template>
 <!--  TODO this would be split out so the generic data would be in its own area and then specific data would be added into the different area (ie Space, Dinosaur, Wildlife) -->
-    <div class="museum-highlight" id="{{data.date}}">
+    <div class="museum-highlight" id="{{data.id}}">
 
       <div class="museum-highlight__header">
         <h3>{{data.name}}</h3>
-        {{getHumanDate(data.date)}}
+        <div v-if="data.date">{{getHumanDate(data.date)}}</div>
       </div>
 
       <div>
@@ -13,7 +13,7 @@
 
         <div class="museum-highlight__body-news" v-if="data.news">
           <h4>{{data.news.title}}</h4>
-          {{getHumanDate(data.news.date)}}
+          <div v-if="data.news.date">{{getHumanDate(data.news.date)}}</div>
         </div>
 
         <a href="{{data.quiz}}" v-show="data.quiz" >Quiz</a>
