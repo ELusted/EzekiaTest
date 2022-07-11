@@ -1,5 +1,5 @@
 <template>
-    <div class="museum-highlight">
+    <div class="museum-highlight">{{data.name}}
         <!-- Display the available information for the highlight -->
     </div>
 </template>
@@ -14,7 +14,10 @@ export default {
     mixins: [
     ],
     props: {
-
+      data: {
+        type: Object,
+        required: false,
+      }
     },
     data() {
         return {

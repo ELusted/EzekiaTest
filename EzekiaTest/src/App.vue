@@ -6,10 +6,23 @@
     <div id="app">
      I'm here
 
+      <space-page></space-page>
     </div>
 
 
 </template>
+
+<script>
+import SpacePage from "./SpacePage.vue";
+
+export default {
+  name: 'NHApp',
+  components: {
+    SpacePage
+  }
+}
+</script>
+
 
 <style>
 

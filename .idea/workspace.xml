@@ -6,19 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="9380daa0-6304-452e-8072-8d74cfa13fc9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/SpacePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/icons/IconCommunity.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/icons/IconDocumentation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/icons/IconEcosystem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/icons/IconSupport.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/icons/IconTooling.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/views/AboutView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/views/HomeView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/assets/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" beforeDir="false" afterPath="$PROJECT_DIR$/EzekiaTest/src/components/MuseumHighlight.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzekiaTest/vite.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +43,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fred/EzekiaTest/EzekiaTest/src",
+    "last_opened_file_path": "/Users/fred/EzekiaTest/EzekiaTest/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EzekiaTest/src/components" />
       <recent name="$PROJECT_DIR$/EzekiaTest/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -71,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657527028231</updated>
-      <workItem from="1657527030827" duration="3293000" />
+      <workItem from="1657527030827" duration="6013000" />
     </task>
     <servers />
   </component>

@@ -57,6 +57,14 @@ Follow the requirements and also complete any prompts in the two component files
             Space
         </h1>
 
+      <div classspace-page__body>
+
+        <museum-highlight v-for="item in spaceHighlights"
+        :data="item">
+
+
+        </museum-highlight>
+      </div>
         <!-- Add the museum highlight cards based on the data provided below -->
 
     </div>
@@ -64,7 +72,7 @@ Follow the requirements and also complete any prompts in the two component files
 
 <script>
 
-// import MuseumHighlight from './components/MuseumHighlight';
+import MuseumHighlight from '././components/MuseumHighlight.vue';
 
 export default {
     name: 'SpacePage',
