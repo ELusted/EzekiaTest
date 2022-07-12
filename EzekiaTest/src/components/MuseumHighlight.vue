@@ -6,12 +6,12 @@
 
 
       <div class="museum-highlight__header">
-        <h3>{{data.name}}
-          <span class="museum-highlight__header-space-icon">
+        <span class="museum-highlight__header-space-icon">
             <font-awesome-icon icon="fa-solid fa-star" />
           </span>
-        </h3>
-        <div v-if="data.date">{{getHumanDate(data.date)}}</div>
+        <h3>{{data.name}}</h3>
+
+        <div v-if="data.date">Posted: {{getHumanDate(data.date)}}</div>
       </div>
 
       <div>
@@ -22,7 +22,7 @@
 
         <div class="museum-highlight__body-news" v-if="data.news">
           <h4>{{data.news.title}}</h4>
-          <div v-if="data.news.date">{{getHumanDate(data.news.date)}}</div>
+          <div v-if="data.news.date">Posted: {{getHumanDate(data.news.date)}}</div>
         </div>
 
       </div>
@@ -89,8 +89,12 @@ export default {
   }
 
   &__header {
+    position: relative;
+
     &-space-icon {
       color: #b4b43d;
+      position: absolute;
+      right: 0px;
     }
   }
 
