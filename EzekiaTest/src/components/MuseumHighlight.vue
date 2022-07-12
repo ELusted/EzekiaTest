@@ -7,10 +7,9 @@
 
       <div class="museum-highlight__header"
            :class="[data.partner ? 'partner' : '']">
-        <!-- The icons would be split out so that the type of card can be passed in and the correct one displayied      -->
-        <span class="museum-highlight__header-space-icon">
-            <font-awesome-icon icon="fa-solid fa-star" />
-          </span>
+        <span class="museum-highlight__header-icon">
+          <slot name="museum-highlight__icon"/>
+        </span>
         <h3>{{data.name}}</h3>
 
         <div v-if="data.date">Posted: {{getHumanDate(data.date)}}</div>
@@ -18,10 +17,13 @@
 
       <div class="museum-highlight__body">
 <!--    If there is no image provided don't show one as a genergic image will be out of context of the artical-->
+        <img :src="data.image" v-if="data.image"/>
 
         {{data.description}}
         <br/>
         <br/>
+
+<!--    This data could be passed in ike the icon or depending on the data this could be broken out into a separate component    -->
         <a :href="data.quiz" v-show="data.quiz" target="_blank">Take the quiz!</a>
 
         <!-- This news bit could be broken out depending on the size of these news items as I feel they make the cards a bit large.       -->
@@ -40,12 +42,11 @@
 
 <script>
 import moment from 'moment';
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 export default {
     name: 'MuseumHighlight',
     components: {
-      FontAwesomeIcon
+
     },
     mixins: [
     ],
@@ -67,7 +68,7 @@ export default {
     },
     methods: {
       getHumanDate(dateValue) {
-        return moment(String(dateValue)).format('DD/MMMM/YYYY hh:mm')
+        return moment(String(dateValue)).format('DD/MM/YYYY hh:mm')
 
       }
 
@@ -81,7 +82,6 @@ export default {
 
 <style lang="scss" scoped>
 .museum-highlight {
-  border: 1px dashed #696969FF;
   margin: 10px;
   width: 300px;
   display: inline-grid;
@@ -95,11 +95,11 @@ export default {
       background-color: #f3f3f3 !important;
     }
 
-    &-space-icon {
+    &-icon {
       color: #b4b43d;
       position: absolute;
-      top: -10px;
-      right: -10px;
+      top: -15px;
+      right: -15px;
     }
 
     h3 {
