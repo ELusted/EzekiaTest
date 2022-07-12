@@ -1,11 +1,13 @@
 <template>
 <!--  TODO this would be split out so the generic data would be in its own area and then specific data would be added into the different area (ie Space, Dinosaur, Wildlife) -->
-    <div class="museum-highlight"
-         :class="[data.partner ? 'partner' : '']"
+<!--    Instead of adding in a partner paramiter if the are always going to not have an id we could use this instead-->
+  <div class="museum-highlight"
          id="{{data.id}}">
 
 
-      <div class="museum-highlight__header">
+      <div class="museum-highlight__header"
+           :class="[data.partner ? 'partner' : '']">
+        <!-- The icons would be split out so that the type of card can be passed in and the correct one displayied      -->
         <span class="museum-highlight__header-space-icon">
             <font-awesome-icon icon="fa-solid fa-star" />
           </span>
@@ -14,12 +16,15 @@
         <div v-if="data.date">Posted: {{getHumanDate(data.date)}}</div>
       </div>
 
-      <div>
+      <div class="museum-highlight__body">
+<!--    If there is no image provided don't show one as a genergic image will be out of context of the artical-->
+
         {{data.description}}
         <br/>
         <br/>
         <a :href="data.quiz" v-show="data.quiz" target="_blank">Take the quiz!</a>
 
+        <!-- This news bit could be broken out depending on the size of these news items as I feel they make the cards a bit large.       -->
         <div class="museum-highlight__body-news" v-if="data.news">
           <h4>{{data.news.title}}</h4>
           <div v-if="data.news.date">Posted: {{getHumanDate(data.news.date)}}</div>
@@ -47,7 +52,7 @@ export default {
     props: {
       data: {
         type: Object,
-        required: false,
+        required: true,
       }
     },
     data() {
@@ -76,26 +81,34 @@ export default {
 
 <style lang="scss" scoped>
 .museum-highlight {
-  border: 1px solid #696969FF;
-  background-color: #d8ddff;
-  border-radius: 10px;
-  padding: 10px;
+  border: 1px dashed #696969FF;
   margin: 10px;
   width: 300px;
   display: inline-grid;
 
-  &.partner {
-    background-color: #f3f3f3 !important;
-  }
-
   &__header {
+    background-color: #d8ddff;
     position: relative;
+    padding: 10px;
+
+    &.partner {
+      background-color: #f3f3f3 !important;
+    }
 
     &-space-icon {
       color: #b4b43d;
       position: absolute;
-      right: 0px;
+      top: -10px;
+      right: -10px;
     }
+
+    h3 {
+      magin-top: 0;
+    }
+  }
+
+  &__body{
+    padding: 10px;
   }
 
 
