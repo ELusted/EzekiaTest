@@ -178,6 +178,7 @@ export default {
 
 <style lang="scss" scoped>
 .space-page {
+  padding: 20px 10px;
     &__title {
         color: #2c3791;
         font-size: 24px;

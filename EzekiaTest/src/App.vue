@@ -16,6 +16,11 @@
 <script>
 import SpacePage from "./SpacePage.vue";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStar)
+
 export default {
   name: 'NHApp',
   components: {
@@ -29,11 +34,7 @@ export default {
 
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
 
-  font-weight: normal;
 }
 
 </style>
